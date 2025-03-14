@@ -1,0 +1,48 @@
+{
+    "nmap": {
+        "command_line": "nmap -oX - -p 22 -sV 211.67.48.2",
+        "scaninfo": {
+            "tcp": {
+                "method": "syn",
+                "services": "22"
+            }
+        },
+        "scanstats": {
+            "timestr": "Mon Dec 23 02:23:23 2024",
+            "elapsed": "2.73",
+            "uphosts": "1",
+            "downhosts": "0",
+            "totalhosts": "1"
+        }
+    },
+    "scan": {
+        "211.67.48.2": {
+            "hostnames": [
+                {
+                    "name": "www.wtu.edu.cn",
+                    "type": "PTR"
+                }
+            ],
+            "addresses": {
+                "ipv4": "211.67.48.2"
+            },
+            "vendor": {},
+            "status": {
+                "state": "up",
+                "reason": "reset"
+            },
+            "tcp": {
+                "22": {
+                    "state": "filtered",
+                    "reason": "no-response",
+                    "name": "ssh",
+                    "product": "",
+                    "version": "",
+                    "extrainfo": "",
+                    "conf": "3",
+                    "cpe": ""
+                }
+            }
+        }
+    }
+}
